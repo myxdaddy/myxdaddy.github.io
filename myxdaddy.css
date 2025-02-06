@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(myxdaddy.jpg);
+    animation: myxdaddy-scroll 1s infinite linear;
+    background-size: 100px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: wheat;
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    animation: myxdaddy-text 1s infinite ease-in-out alternate;
+    margin: 0;
+}
+
+@keyframes myxdaddy-scroll {
+    to {
+        background-position: 100px 150px;
+    }
+}
+
+@keyframes myxdaddy-text {
+    from {
+        transform: translateY(0.25em);
+    }
+
+    to {
+        transform: translateY(-0.25em);
+    }
+}
+
+.reveal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16em;
+    height: 16em;
+    background-image: radial-gradient(transparent 0%, black 75%);
+}
+
+@keyframes myxdaddy-reveal {
+    
+}
